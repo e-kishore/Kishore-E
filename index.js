@@ -1,44 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
+const text = "B.Tech AI & ML Student | Aspiring Software Developer";
+let i = 0;
+const tagline = document.getElementById("tagline");
 
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-
-  const themeToggle = document.getElementById('theme-toggle');
-  const body = document.body;
-  const toggleIcon = themeToggle.querySelector('i');
-
-  const setTheme = (theme) => {
-    if (theme === 'dark') {
-      body.classList.add('dark-mode');
-      toggleIcon.classList.replace('fa-moon', 'fa-sun');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      body.classList.remove('dark-mode');
-      toggleIcon.classList.replace('fa-sun', 'fa-moon');
-      localStorage.setItem('theme', 'light');
-    }
-  };
-
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) setTheme(savedTheme);
-
-  themeToggle.addEventListener('click', () => {
-    setTheme(localStorage.getItem('theme') === 'dark' ? 'light' : 'dark');
-  });
-
-  // Typewriter Effect
-  const taglineEl = document.querySelector('.tagline');
-  const taglineText = "Computer Science Engineer | Java | Python | Machine Learning | AWS";
-  let index = 0;
-
-  function typeWriter() {
-    if (index < taglineText.length) {
-      taglineEl.textContent += taglineText.charAt(index++);
-      setTimeout(typeWriter, 60);
-    }
+function type() {
+  if (i < text.length) {
+    tagline.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 60);
   }
-
-  setTimeout(typeWriter, 800);
-});
+}
+type();
