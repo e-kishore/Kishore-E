@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Kishore Elangovan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kishore Elangovan | Software Engineer Portfolio</title>
+  <meta name="description" content="Kishore Elangovan – AI & ML student portfolio">
+  <meta name="author" content="Kishore Elangovan">
 
-  <meta name="description" content="Portfolio of Kishore Elangovan — Computer Science Engineer skilled in Java, Python, Machine Learning, and AWS." />
-  <meta name="author" content="Kishore Elangovan" />
-
-  <meta property="og:title" content="Kishore Elangovan | Portfolio" />
-  <meta property="og:url" content="https://e-kishore.github.io/Kishore-E/" />
-
-  <link rel="icon" type="image/png" href="logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <header>
   <nav>
-    <a href="#home" class="logo"><img src="logo.png" alt="Logo"></a>
-    <ul class="nav-links">
+    <h1 class="logo">Kishore</h1>
+    <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Certificates</a></li>
-      <li><a href="#internship">Internship</a></li>
+      <li><a href="#certificates">Certificates</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button id="themeToggle">🌙</button>
   </nav>
 </header>
 
-<main>
-
 <!-- HOME -->
 <section id="home">
-  <img src="kishore.jpg" class="profile-photo" alt="Kishore">
-  <h1>Kishore Elangovan</h1>
-  <p class="tagline"></p>
-  <p><i class="fas fa-map-marker-alt"></i> Trichy, Tamil Nadu</p>
-  <a href="Kishore_Resume.pdf" class="btn" download>Download Resume</a>
+  <img src="images/profile.jpg" class="profile" alt="Kishore">
+  <h2>Kishore Elangovan</h2>
+  <p id="tagline"></p>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <!-- PROJECTS -->
@@ -53,21 +42,15 @@
   <div class="card-grid">
 
     <div class="card">
-      <img src="project1.jpg">
-      <h3>Driver Drowsiness Detection</h3>
-      <p>YOLO-based ML system to detect driver distraction in real time.</p>
+      <img src="images/project1.jpg">
+      <h3>PennyPilot</h3>
+      <p>Personal finance dashboard with charts & animations</p>
     </div>
 
     <div class="card">
-      <img src="project2.jpg">
-      <h3>Twitter Sentiment Analysis</h3>
-      <p>Classifies tweets as positive or negative using ML & NLP.</p>
-    </div>
-
-    <div class="card">
-      <img src="project3.jpg">
-      <h3>Canteen Billing System</h3>
-      <p>Java Swing based automated billing system.</p>
+      <img src="images/project2.jpg">
+      <h3>SamvidhanAI</h3>
+      <p>Legal assistant chatbot using Gemini AI & RAG</p>
     </div>
 
   </div>
@@ -79,44 +62,28 @@
   <div class="card-grid">
 
     <div class="card">
-      <h3>B.E – Computer Science</h3>
-      <p>M.I.E.T Engineering College</p>
-      <strong>CGPA: 8.02</strong>
+      <h3>VIT Chennai</h3>
+      <p>B.Tech – AI & ML</p>
+      <span class="badge">CGPA: 8.0</span>
     </div>
 
     <div class="card">
-      <h3>HSC – Computer Science</h3>
-      <p>Holy Cross Matriculation</p>
-      <strong>86.17%</strong>
-    </div>
-
-    <div class="card">
-      <h3>SSLC</h3>
-      <p>Holy Cross Matriculation</p>
-      <strong>88.2%</strong>
+      <h3>Nirmala Matric School</h3>
+      <p>Higher Secondary</p>
+      <span class="badge">Percentage: 85%</span>
     </div>
 
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <h2>Certifications</h2>
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <h2>Certificates</h2>
   <div class="card-grid">
 
     <div class="card">
-      <img src="cert2.png">
-      <h3>AWS Restart – TN Skill</h3>
-    </div>
-
-    <div class="card">
-      <img src="cert1.png">
-      <h3>Cyber Security – Naan Mudhalvan</h3>
-    </div>
-
-    <div class="card">
-      <img src="cert3.png">
-      <h3>Blockchain Basics – Naan Mudhalvan</h3>
+      <img src="images/certificate1.jpg">
+      <h3>AWS Re/Start</h3>
     </div>
 
   </div>
@@ -126,35 +93,4 @@
 <section id="internship">
   <h2>Internship</h2>
   <div class="card-grid">
-    <div class="card">
-      <img src="internship.jpg">
-      <h3>Shiash Info Solutions</h3>
-      <p>Worked on ML models, data analysis & deployment.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-links">
-    <a href="mailto:kishorelang@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/kishorelang" target="_blank">LinkedIn</a>
-    <a href="https://github.com/e1215043kishore" target="_blank">GitHub</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2025 Kishore Elangovan</p>
-</footer>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="index.js"></script>
-
-</body>
-</html>
-
-
-
+    <
