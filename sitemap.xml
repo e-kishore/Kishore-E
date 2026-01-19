@@ -8,18 +8,18 @@
   </url>
 
   <url>
-    <loc>https://e-kishore.github.io/Kishore-E/#about</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://e-kishore.github.io/Kishore-E/#skills</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://e-kishore.github.io/Kishore-E/#projects</loc>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://e-kishore.github.io/Kishore-E/#education</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://e-kishore.github.io/Kishore-E/#certifications</loc>
+    <priority>0.7</priority>
   </url>
 
   <url>
