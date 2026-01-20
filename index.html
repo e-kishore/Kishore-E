@@ -10,22 +10,31 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
 </head>
 
 <body>
 
 <header>
-  <nav class="container">
-    <h1 class="logo">Kishore E</h1>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#internship">Internship</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+ <nav class="container">
+  <h1 class="logo">Kishore E</h1>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#internship">Internship</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button id="themeToggle">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
 </header>
 
 <!-- HOME -->
@@ -145,7 +154,7 @@
   <h2>Contact</h2>
   <div class="contact-links">
     <a href="mailto:kishorelang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://linkedin.com/in/kishore-elangovan" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://linkedin.com/in/kishorelang/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <a href="https://github.com/e-kishore" target="_blank"><i class="fa-brands fa-github"></i></a>
   </div>
 </section>
@@ -155,7 +164,10 @@
 </footer>
 
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 </body>
 </html>
+
 
 
