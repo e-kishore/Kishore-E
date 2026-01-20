@@ -1,12 +1,13 @@
-const text = "B.Tech AI & ML Student | Aspiring Software Developer";
+const text = "Java | Python | Machine Learning | AWS";
 let i = 0;
 const tagline = document.getElementById("tagline");
 
-function type() {
+function typeEffect() {
   if (i < text.length) {
-    tagline.innerHTML += text.charAt(i);
+    tagline.textContent += text.charAt(i);
     i++;
-    setTimeout(type, 60);
+    setTimeout(typeEffect, 60);
   }
 }
-type();
+
+typeEffect();
