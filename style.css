@@ -1,3 +1,16 @@
+:root {
+  --bg: #f4f6fb;
+  --text: #222;
+  --card: #ffffff;
+  --primary: #007bff;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #eaeaea;
+  --card: #1e1e1e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +19,9 @@
 }
 
 body {
-  background: #f4f6fb;
-  color: #222;
+  background: var(--bg);
+  color: var(--text);
+  transition: background .3s, color .3s;
 }
 
 header {
@@ -90,11 +104,13 @@ h2 {
 }
 
 .card {
-  background: white;
-  padding: 1rem;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.1);
-  text-align: center;
+  background: var(--card);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
 }
 
 .card img {
