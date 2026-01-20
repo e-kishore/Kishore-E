@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kishore Elangovan | Portfolio</title>
+  <title>Kishore Elangovan | Computer Science Graduate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Kishore Elangovan – AI & ML student portfolio">
+  <meta name="description" content="Kishore Elangovan – Computer Science Graduate | Java, Python, ML, AWS">
   <meta name="author" content="Kishore Elangovan">
 
   <link rel="stylesheet" href="style.css">
@@ -15,82 +15,145 @@
 <body>
 
 <header>
-  <nav>
-    <h1 class="logo">Kishore</h1>
-    <ul>
+  <nav class="container">
+    <h1 class="logo">Kishore E</h1>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#internship">Internship</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="themeToggle">🌙</button>
   </nav>
 </header>
 
 <!-- HOME -->
-<section id="home">
-  <img src="images/profile.jpg" class="profile" alt="Kishore">
+<section id="home" class="hero">
+  <img src="images/profile.jpg" class="profile-img" alt="Kishore Elangovan">
   <h2>Kishore Elangovan</h2>
+  <p class="role">Computer Science Graduate</p>
   <p id="tagline"></p>
   <a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
+<!-- SUMMARY -->
+<section class="container summary">
+  <h2>Profile Summary</h2>
+  <p>
+    Motivated and adaptable Computer Science Engineer with strong expertise in Java, Python,
+    and data-driven problem solving. Experienced in developing real-time applications,
+    implementing machine learning models, and leveraging AWS for scalable solutions.
+    Passionate about continuous learning and building impactful software systems.
+  </p>
+</section>
+
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="container">
   <h2>Projects</h2>
-  <div class="card-grid">
+  <div class="grid">
 
     <div class="card">
       <img src="images/project1.jpg">
-      <h3>PennyPilot</h3>
-      <p>Personal finance dashboard with charts & animations</p>
+      <h3>Twitter Sentiment Analysis</h3>
+      <p>Classified positive and negative tweets using machine learning techniques.</p>
     </div>
 
     <div class="card">
       <img src="images/project2.jpg">
-      <h3>SamvidhanAI</h3>
-      <p>Legal assistant chatbot using Gemini AI & RAG</p>
+      <h3>Canteen Billing System</h3>
+      <p>Java Swing-based billing system to automate canteen transactions.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/project3.jpg">
+      <h3>Driver Distraction & Drowsiness Detection</h3>
+      <p>YOLO-based ML system to detect driver distraction and drowsiness.</p>
     </div>
 
   </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
+<section id="education" class="container">
   <h2>Education</h2>
-  <div class="card-grid">
+  <div class="grid">
 
-    <div class="card">
-      <h3>VIT Chennai</h3>
-      <p>B.Tech – AI & ML</p>
-      <span class="badge">CGPA: 8.0</span>
+    <div class="card text-card">
+      <h3>B.E – Computer Science & Engineering</h3>
+      <p>M.I.E.T Engineering College</p>
+      <span class="badge">CGPA: 8.02</span>
     </div>
 
-    <div class="card">
-      <h3>Nirmala Matric School</h3>
-      <p>Higher Secondary</p>
-      <span class="badge">Percentage: 85%</span>
+    <div class="card text-card">
+      <h3>Higher Secondary (Computer Science)</h3>
+      <p>2019 – 2021</p>
+      <span class="badge">Percentage: 86.17%</span>
+    </div>
+
+    <div class="card text-card">
+      <h3>SSLC</h3>
+      <p>2007 – 2019</p>
+      <span class="badge">Percentage: 88.2%</span>
     </div>
 
   </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section id="certificates">
-  <h2>Certificates</h2>
-  <div class="card-grid">
+<section id="certificates" class="container">
+  <h2>Certifications</h2>
+  <div class="grid">
 
     <div class="card">
-      <img src="images/certificate1.jpg">
-      <h3>AWS Re/Start</h3>
+      <img src="images/cert1.jpg">
+      <h3>AWS re/Start – TN Skill</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/cert2.jpg">
+      <h3>Cyber Security – Naan Mudhalvan</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/cert3.jpg">
+      <h3>Blockchain Basics – Naan Mudhalvan</h3>
     </div>
 
   </div>
 </section>
 
 <!-- INTERNSHIP -->
-<section id="internship">
+<section id="internship" class="container">
   <h2>Internship</h2>
-  <div class="card-grid">
-    <
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/internship.jpg">
+      <h3>Shiash Info Solutions</h3>
+      <p>
+        Gained hands-on experience in data analysis, ML model development,
+        real-world datasets, and Python-based model evaluation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:kishorelang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/kishore-elangovan" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/e1215043kishore" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Kishore Elangovan | Computer Science Graduate
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
