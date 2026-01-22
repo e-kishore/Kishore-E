@@ -119,9 +119,11 @@ h2 {
 }
 
 .card img {
+  height: 220px;              /* SAME height for all */
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: .8rem;
+  object-fit: contain;        /* show full certificate */
+  background-color: #ffffff; /* clean border */
+  padding: 10px;
 }
 
 .text-card {
