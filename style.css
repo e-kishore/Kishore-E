@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+   font-family: 'Inter', 'Poppins', sans-serif;
 }
 
 body {
@@ -25,11 +25,13 @@ body {
 }
 
 header {
-  position: fixed;
+   position: fixed;
+  top: 0;
   width: 100%;
-  background: white;
-  box-shadow: 0 2px 12px rgba(0,0,0,.1);
-  z-index: 100;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background-color: var(--nav-bg-color);
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .container {
@@ -62,9 +64,12 @@ nav {
 }
 
 .profile-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  width: 220px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  border: none;
 }
 
 .role {
