@@ -1,40 +1,55 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* =====================
+     AOS INITIALIZATION
+  ====================== */
   AOS.init({
-    duration: 1000,
-    once: true
+    duration: 900,
+    once: true,
+    easing: "ease-out-cubic"
   });
 
-  const toggle = document.getElementById("theme-toggle");
-  const icon = toggle.querySelector("i");
+  /* =====================
+     THEME TOGGLE
+  ====================== */
+  const toggleBtn = document.getElementById("theme-toggle");
+  const icon = toggleBtn.querySelector("i");
+  const body = document.body;
 
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
+  const setTheme = (mode) => {
+    if (mode === "dark") {
+      body.classList.add("dark-mode");
       icon.classList.replace("fa-moon", "fa-sun");
       localStorage.setItem("theme", "dark");
     } else {
+      body.classList.remove("dark-mode");
       icon.classList.replace("fa-sun", "fa-moon");
       localStorage.setItem("theme", "light");
     }
+  };
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) setTheme(savedTheme);
+
+  toggleBtn.addEventListener("click", () => {
+    const current = body.classList.contains("dark-mode") ? "dark" : "light";
+    setTheme(current === "dark" ? "light" : "dark");
   });
 
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    icon.classList.replace("fa-moon", "fa-sun");
-  }
-
+  /* =====================
+     TYPEWRITER TAGLINE
+  ====================== */
   const tagline = document.querySelector(".tagline");
-  const text = "Computer Science Graduate | Java | Python | ML | AWS";
+  const text = "Computer Science Engineer | Java | Python | ML | AWS";
   let i = 0;
 
-  function type() {
+  function typeEffect() {
     if (i < text.length) {
       tagline.textContent += text.charAt(i);
       i++;
-      setTimeout(type, 70);
+      setTimeout(typeEffect, 60);
     }
   }
-  type();
+
+  setTimeout(typeEffect, 800);
 });
