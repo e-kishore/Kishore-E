@@ -310,3 +310,29 @@ footer {
     text-align: left;
   }
 }
+/* ================================
+   FIX LARGE CERTIFICATE IMAGES
+================================ */
+
+/* Shared card image style */
+.project-card img {
+  width: 100%;
+  height: 200px;              /* 🔑 fixed height */
+  object-fit: cover;          /* crops vertical images */
+  border-radius: 10px;
+  background: #fff;
+  display: block;
+}
+
+/* Certifications & Workshops spacing */
+#certifications .project-card,
+#workshops .project-card {
+  overflow: hidden;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .project-card img {
+    height: 180px;
+  }
+}
