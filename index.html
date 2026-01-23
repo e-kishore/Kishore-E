@@ -3,131 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Kishore Elangovan | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Kishore Elangovan – Computer Science Graduate | Java, Python, ML, AWS" />
+  <meta name="author" content="Kishore Elangovan" />
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header>
-  <nav class="container">
-    <h1 class="logo">Kishore E</h1>
-    <ul class="nav-links" id="navLinks">
+  <nav>
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </a>
+
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#workshops">Workshops</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <button id="theme-toggle" class="theme-toggle-btn">
+      <i class="fas fa-moon"></i>
+    </button>
   </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero container">
-  <div class="hero-text">
-    <h2>Hello, I'm</h2>
-    <h1>Kishore Elangovan</h1>
-    <p id="tagline"></p>
-    <a href="Kishore_Resume.pdf" class="btn" download>Download Resume</a>
-  </div>
-  <img src="profile.jpg" alt="Kishore" class="hero-img">
+<main>
+
+<!-- HOME -->
+<section id="home">
+  <img src="images/kishore.jpg" class="profile-photo" data-aos="fade-up">
+  <h1 data-aos="fade-in">Kishore Elangovan</h1>
+  <p class="tagline"></p>
+  <p class="location"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+
+  <a href="kishore_resume.pdf" class="btn" download>
+    <i class="fas fa-download"></i> Resume
+  </a>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="container section">
-  <h2>About Me</h2>
-  <p class="center-text">
-    Computer Science Graduate passionate about Java, Python, Machine Learning and AWS.
-    I enjoy building real-world applications and continuously improving my skills.
+<section id="about">
+  <h2 data-aos="fade-right">About Me</h2>
+  <p data-aos="fade-up">
+    Motivated Computer Science graduate with strong foundations in Java, Python,
+    Machine Learning, and AWS. Passionate about building scalable applications
+    and continuously learning emerging technologies.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="container section">
-  <h2>Skills</h2>
+<section id="skills">
+  <h2 data-aos="fade-left">Skills</h2>
   <div class="skills-grid">
-    <span>Java</span>
-    <span>Python</span>
-    <span>Machine Learning</span>
-    <span>AWS</span>
-    <span>SQL</span>
-    <span>HTML & CSS</span>
+    <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+    <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+    <div class="skill-item"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
+    <div class="skill-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="container section">
-  <h2>Projects</h2>
+<section id="projects">
+  <h2 data-aos="fade-right">Projects</h2>
+  <div class="projects-grid">
 
-  <div class="card-grid">
-    <div class="card">
-      <img src="images/project1.jpg">
+    <article class="project-card">
       <h3>Twitter Sentiment Analysis</h3>
-      <p>ML-based tweet sentiment classification.</p>
-    </div>
+      <p>ML-based sentiment classification of tweets using NLP techniques.</p>
+    </article>
 
-    <div class="card">
-      <img src="images/project2.jpg">
-      <h3>Canteen Billing System</h3>
-      <p>Java Swing based billing automation.</p>
-    </div>
-
-    <div class="card">
-      <img src="images/project3.jpg">
+    <article class="project-card">
       <h3>Driver Drowsiness Detection</h3>
-      <p>YOLO-based driver monitoring system.</p>
-    </div>
+      <p>YOLO-based real-time system to detect driver distraction.</p>
+    </article>
+
+    <article class="project-card">
+      <h3>Canteen Billing System</h3>
+      <p>Java Swing based billing system for automated transactions.</p>
+    </article>
+
   </div>
 </section>
 
-<!-- CERTIFICATES (SPACE ADDED HERE) -->
-<section id="certificates" class="container section">
-  <h2>Certificates & Workshops</h2>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2 data-aos="fade-left">Certifications</h2>
 
-  <div class="card-grid">
-    <div class="card">
-      <img src="images/cert1.jpg">
+  <div class="projects-grid">
+
+    <article class="project-card">
       <h3>AWS re/Start</h3>
-      <p>TN Skill Development</p>
-    </div>
+      <p>Cloud computing fundamentals, Linux, Python, AWS services.</p>
+    </article>
 
-    <div class="card">
-      <img src="images/cert2.jpg">
+    <article class="project-card">
       <h3>Cyber Security</h3>
-      <p>Naan Mudhalvan</p>
-    </div>
+      <p>Naan Mudhalvan – cyber security training program.</p>
+    </article>
 
-    <div class="card">
-      <img src="images/cert3.jpg">
-      <h3>Ethical Hacking</h3>
-      <p>Workshop</p>
-    </div>
+    <article class="project-card">
+      <h3>Blockchain Basics</h3>
+      <p>Understanding blockchain and decentralized systems.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- WORKSHOPS -->
+<section id="workshops">
+  <h2 data-aos="fade-right">Workshops & Appreciations</h2>
+
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <h3>Ethical Hacking Workshop</h3>
+      <p>3-day hands-on cyber security workshop.</p>
+    </article>
+
+    <article class="project-card">
+      <h3>1st Prize – Technical Quiz</h3>
+      <p>K. Ramakrishnan College of Technology.</p>
+    </article>
+
+    <article class="project-card">
+      <h3>Anna University Symposium</h3>
+      <p>National-level technical symposium participation.</p>
+    </article>
+
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="container section">
-  <h2>Contact</h2>
+<section id="contact">
+  <h2 data-aos="fade-left">Get In Touch</h2>
+
   <div class="contact-links">
-    <a href="mailto:kishorelang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/kishorelang" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/e-kishore" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:kishorelang@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://linkedin.com/in/your-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/your-github"><i class="fab fa-github"></i> GitHub</a>
   </div>
 </section>
 
+</main>
+
 <footer>
-  © 2025 Kishore Elangovan
+  © 2025 Kishore Elangovan. All rights reserved.
 </footer>
 
-<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
-
-
-
