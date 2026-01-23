@@ -1,229 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kishore Elangovan | Computer Science Graduate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishore Elangovan | Portfolio</title>
 
-  <meta name="description" content="Kishore Elangovan – Computer Science Graduate | Java, Python, ML, AWS">
-  <meta name="author" content="Kishore Elangovan">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header>
- <nav class="container">
-  <h1 class="logo">Kishore E</h1>
-
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#internship">Internship</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <div class="nav-actions">
-    <button id="themeToggle">🌙</button>
+  <nav class="container">
+    <h1 class="logo">Kishore E</h1>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  </div>
-</nav>
-
+  </nav>
 </header>
 
-<!-- HOME -->
-<section id="home" class="hero">
-  <img src="images/Kishore_Professional_Photo.jpg" class="profile-img" alt="Kishore Elangovan">
-  <h2>Kishore Elangovan</h2>
-  <p class="role">Computer Science Graduate</p>
-  <p id="tagline"></p>
-  <a href="Kishore_Resume.pdf" class="btn" download>Download Resume</a>
+<!-- HERO -->
+<section id="home" class="hero container">
+  <div class="hero-text">
+    <h2>Hello, I'm</h2>
+    <h1>Kishore Elangovan</h1>
+    <p id="tagline"></p>
+    <a href="Kishore_Resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+  <img src="images/profile.jpg" alt="Kishore" class="hero-img">
 </section>
 
-<!-- SUMMARY -->
-<section class="container summary">
-  <h2>Profile Summary</h2>
-  <p>
-    Motivated and adaptable Computer Science Engineer with strong expertise in Java, Python,
-    and data-driven problem solving. Experienced in developing real-time applications,
-    implementing machine learning models, and leveraging AWS for scalable solutions.
-    Passionate about continuous learning and building impactful software systems.
+<!-- ABOUT -->
+<section id="about" class="container section">
+  <h2>About Me</h2>
+  <p class="center-text">
+    Computer Science Graduate passionate about Java, Python, Machine Learning and AWS.
+    I enjoy building real-world applications and continuously improving my skills.
   </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="container">
-  <h2>Projects</h2>
-  <div class="grid">
+<!-- SKILLS -->
+<section id="skills" class="container section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>Java</span>
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>AWS</span>
+    <span>SQL</span>
+    <span>HTML & CSS</span>
+  </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <h2>Projects</h2>
+
+  <div class="card-grid">
     <div class="card">
       <img src="images/project1.jpg">
       <h3>Twitter Sentiment Analysis</h3>
-      <p>Classified positive and negative tweets using machine learning techniques.</p>
+      <p>ML-based tweet sentiment classification.</p>
     </div>
 
     <div class="card">
       <img src="images/project2.jpg">
       <h3>Canteen Billing System</h3>
-      <p>Java Swing-based billing system to automate canteen transactions.</p>
+      <p>Java Swing based billing automation.</p>
     </div>
 
     <div class="card">
       <img src="images/project3.jpg">
-      <h3>Driver Distraction & Drowsiness Detection</h3>
-      <p>YOLO-based ML system to detect driver distraction and drowsiness.</p>
+      <h3>Driver Drowsiness Detection</h3>
+      <p>YOLO-based driver monitoring system.</p>
     </div>
-
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education" class="container">
-  <h2>Education</h2>
-  <div class="grid">
-
-    <div class="card text-card">
-      <h3>B.E – Computer Science & Engineering</h3>
-      <p>M.I.E.T Engineering College</p>
-      <span class="badge">CGPA: 8.02</span>
-    </div>
-
-    <div class="card text-card">
-      <h3>Higher Secondary (Computer Science)</h3>
-      <p>2019 – 2021</p>
-      <span class="badge">Percentage: 86.17%</span>
-    </div>
-
-    <div class="card text-card">
-      <h3>SSLC</h3>
-      <p>2007 – 2019</p>
-      <span class="badge">Percentage: 88.2%</span>
-    </div>
-
-  </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="container">
-  <h2>Certifications</h2>
-  <div class="grid">
-
-    <div class="card">
-      <img src="images/cert1.jpg">
-      <h3>AWS re/Start – TN Skill</h3>
-    </div>
-
-    <div class="card">
-      <img src="images/cert2.jpg">
-      <h3>Cyber Security – Naan Mudhalvan</h3>
-    </div>
-
-    <div class="card">
-      <img src="images/cert3.jpg">
-      <h3>Blockchain Basics – Naan Mudhalvan</h3>
-    </div>
-
-  </div>
-</section>
-
-<!-- INTERNSHIP -->
-<section id="internship" class="container">
-  <h2>Internship</h2>
-  <div class="grid">
-
-    <div class="card">
-      <img src="images/internship.jpg">
-      <h3>Shiash Info Solutions</h3>
-      <p>
-        Gained hands-on experience in data analysis, ML model development,
-        real-world datasets, and Python-based model evaluation.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-  <section id="certificates" class="container">
+<!-- CERTIFICATES (SPACE ADDED HERE) -->
+<section id="certificates" class="container section">
   <h2>Certificates & Workshops</h2>
 
-  <div class="grid certificates-grid">
-
-    <div class="certificate-card">
-      <img src="images/certificates/anna-university.jpg" alt="Anna University Symposium">
-      <div class="cert-info">
-        <h3>National Level Symposium</h3>
-        <p>Anna University Regional Campus, Coimbatore</p>
-      </div>
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/certificates/cert1.jpg">
+      <h3>AWS re/Start</h3>
+      <p>TN Skill Development</p>
     </div>
 
-    <div class="certificate-card">
-      <img src="images/certificates/bishop.jpg" alt="Analytix Fest">
-      <div class="cert-info">
-        <h3>Analytix Fest 2K24</h3>
-        <p>Bishop Heber College – Data Science</p>
-      </div>
+    <div class="card">
+      <img src="images/certificates/cert2.jpg">
+      <h3>Cyber Security</h3>
+      <p>Naan Mudhalvan</p>
     </div>
 
-    <div class="certificate-card">
-      <img src="images/certificates/krct.jpg" alt="AVINYA 2K23">
-      <div class="cert-info">
-        <h3>AVINYA 2K23</h3>
-        <p>K. Ramakrishnan College of Engineering</p>
-      </div>
+    <div class="card">
+      <img src="images/certificates/cert3.jpg">
+      <h3>Ethical Hacking</h3>
+      <p>Workshop</p>
     </div>
-
-    <div class="certificate-card">
-      <img src="images/certificates/mam.jpg" alt="TECKON 2K24">
-      <div class="cert-info">
-        <h3>TECKON 2K24</h3>
-        <p>M.A.M College of Engineering</p>
-      </div>
-    </div>
-
-    <div class="certificate-card">
-      <img src="images/certificates/ethical-hacking.jpg" alt="Ethical Hacking">
-      <div class="cert-info">
-        <h3>Ethical Hacking Workshop</h3>
-        <p>3 Days Hands-on Workshop</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-  
 <!-- CONTACT -->
-<section id="contact" class="container">
+<section id="contact" class="container section">
   <h2>Contact</h2>
   <div class="contact-links">
     <a href="mailto:kishorelang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://linkedin.com/in/kishorelang/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/kishorelang" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <a href="https://github.com/e-kishore" target="_blank"><i class="fa-brands fa-github"></i></a>
   </div>
 </section>
 
 <footer>
-  © 2025 Kishore Elangovan | Computer Science Graduate
+  © 2025 Kishore Elangovan
 </footer>
 
-<script src="index.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
