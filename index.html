@@ -4,25 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Kishore Elangovan | Portfolio</title>
+  <title>Kishore Elangovan | Computer Science Graduate</title>
 
   <meta name="description" content="Kishore Elangovan – Computer Science Graduate | Java, Python, ML, AWS" />
   <meta name="author" content="Kishore Elangovan" />
 
-  <link rel="icon" type="image/png" href="images/logo.png">
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
   <nav>
     <a href="#home" class="logo">
-      <img src="images/logo.png" alt="Logo">
+      <img src="logo.png" alt="Kishore Logo">
     </a>
 
     <ul class="nav-links">
@@ -43,130 +47,135 @@
 
 <main>
 
-<!-- HOME -->
+<!-- ================= HOME ================= -->
 <section id="home">
-  <img src="images/kishore.jpg" class="profile-photo" data-aos="fade-up">
-  <h1 data-aos="fade-in">Kishore Elangovan</h1>
-  <p class="tagline"></p>
-  <p class="location"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+  <div class="home-content">
+    <img src="kishore.jpg" alt="Kishore Elangovan" class="profile-photo" data-aos="fade-up">
 
-  <a href="kishore_resume.pdf" class="btn" download>
-    <i class="fas fa-download"></i> Resume
-  </a>
-</section>
+    <h1 data-aos="fade-in" data-aos-delay="200">Kishore Elangovan</h1>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2 data-aos="fade-right">About Me</h2>
-  <p data-aos="fade-up">
-    Motivated Computer Science graduate with strong foundations in Java, Python,
-    Machine Learning, and AWS. Passionate about building scalable applications
-    and continuously learning emerging technologies.
-  </p>
-</section>
+    <p class="tagline"></p>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2 data-aos="fade-left">Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-    <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-    <div class="skill-item"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
-    <div class="skill-item"><i class="fab fa-aws"></i><span>AWS</span></div>
-    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
-    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+    <p class="location" data-aos="fade-up" data-aos-delay="400">
+      <i class="fas fa-map-marker-alt"></i> Tamil Nadu, India
+    </p>
+
+    <a href="Kishore_Resume.pdf" class="btn" download data-aos="fade-up" data-aos-delay="600">
+      <i class="fas fa-download"></i> Resume
+    </a>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2 data-aos="fade-right">About Me</h2>
+  <p data-aos="fade-up">
+    Motivated Computer Science graduate with strong skills in Java, Python, Machine Learning,
+    and AWS. Passionate about building real-world solutions, learning emerging technologies,
+    and contributing to impactful software systems.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2 data-aos="fade-left">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item" data-aos="fade-up"><i class="fab fa-python"></i><span>Python</span></div>
+    <div class="skill-item" data-aos="fade-up"><i class="fab fa-java"></i><span>Java</span></div>
+    <div class="skill-item" data-aos="fade-up"><i class="fas fa-database"></i><span>SQL</span></div>
+    <div class="skill-item" data-aos="fade-up"><i class="fab fa-html5"></i><span>HTML</span></div>
+    <div class="skill-item" data-aos="fade-up"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill-item" data-aos="fade-up"><i class="fab fa-aws"></i><span>AWS</span></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
 <section id="projects">
   <h2 data-aos="fade-right">Projects</h2>
   <div class="projects-grid">
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up">
       <h3>Twitter Sentiment Analysis</h3>
-      <p>ML-based sentiment classification of tweets using NLP techniques.</p>
+      <p>Machine learning based system to classify tweets into positive and negative sentiments.</p>
     </article>
 
-    <article class="project-card">
-      <h3>Driver Drowsiness Detection</h3>
-      <p>YOLO-based real-time system to detect driver distraction.</p>
+    <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+      <h3>Driver Distraction & Drowsiness Detection</h3>
+      <p>YOLO-based real-time system to detect distraction and drowsiness in drivers.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
       <h3>Canteen Billing System</h3>
-      <p>Java Swing based billing system for automated transactions.</p>
+      <p>Java Swing application to automate billing and order management.</p>
     </article>
 
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
+<!-- ================= CERTIFICATIONS ================= -->
 <section id="certifications">
   <h2 data-aos="fade-left">Certifications</h2>
 
   <div class="projects-grid">
-
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up">
       <h3>AWS re/Start</h3>
-      <p>Cloud computing fundamentals, Linux, Python, AWS services.</p>
+      <p>Cloud fundamentals, Linux, Python, networking, and AWS services.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up" data-aos-delay="150">
       <h3>Cyber Security</h3>
-      <p>Naan Mudhalvan – cyber security training program.</p>
+      <p>Naan Mudhalvan – security fundamentals, threats, and prevention techniques.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
       <h3>Blockchain Basics</h3>
-      <p>Understanding blockchain and decentralized systems.</p>
+      <p>Introduction to blockchain concepts, smart contracts, and decentralization.</p>
     </article>
-
   </div>
 </section>
 
-<!-- WORKSHOPS -->
+<!-- ================= WORKSHOPS ================= -->
 <section id="workshops">
   <h2 data-aos="fade-right">Workshops & Appreciations</h2>
 
   <div class="projects-grid">
-
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up">
       <h3>Ethical Hacking Workshop</h3>
-      <p>3-day hands-on cyber security workshop.</p>
+      <p>3-day hands-on workshop covering penetration testing and cyber security tools.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up" data-aos-delay="150">
       <h3>1st Prize – Technical Quiz</h3>
-      <p>K. Ramakrishnan College of Technology.</p>
+      <p>K. Ramakrishnan College of Technology (KRCT).</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
       <h3>Anna University Symposium</h3>
-      <p>National-level technical symposium participation.</p>
+      <p>Participation in national-level technical symposium.</p>
     </article>
-
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact">
-  <h2 data-aos="fade-left">Get In Touch</h2>
+  <h2 data-aos="fade-left">Contact</h2>
 
   <div class="contact-links">
     <a href="mailto:kishorelang@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    <a href="https://linkedin.com/in/your-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/your-github"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com/in/kishorelang" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/e-kishore" target="_blank"><i class="fab fa-github"></i> GitHub</a>
   </div>
 </section>
 
 </main>
 
 <footer>
-  © 2025 Kishore Elangovan. All rights reserved.
+  <p>© 2025 Kishore Elangovan. All Rights Reserved.</p>
 </footer>
 
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="index.js"></script>
+
 </body>
 </html>
